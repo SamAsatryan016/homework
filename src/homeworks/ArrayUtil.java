@@ -103,7 +103,7 @@ public class ArrayUtil {
 
         System.out.println("======   BONUS   ======");
 
-
+//Bonus 1 — Գտնել ամենամեծ թիվը
         int max = numbers[0];
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] > max) {
@@ -114,6 +114,8 @@ public class ArrayUtil {
 
 
         System.out.println();
+
+        //Bonus 2 — Հաշվել դրական և բացասական թվերը
 
         int positiveCount = 0;
         for (int i = 0; i < numbers.length; i++) {
@@ -147,6 +149,7 @@ public class ArrayUtil {
         System.out.print("Zero:" + zero);
 
         System.out.println();
+        //Bonus 3 — Տպել զանգվածը հակառակ հերթականությամբ
 
 
         for (int i = numbers.length - 1; i > 0; i--) {
