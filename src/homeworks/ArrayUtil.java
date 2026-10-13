@@ -65,9 +65,7 @@ public class ArrayUtil {
         System.out.println();
 
 
-
         //Խնդիր 8 — Հաշվել կենտ թվերի քանակը
-
 
 
         int Odd = 0;
@@ -82,7 +80,6 @@ public class ArrayUtil {
         System.out.println();
 
 
-
         //Խնդիր 9 — Հաշվել զանգվածի էլեմենտների գումարը
 
 
@@ -95,18 +92,98 @@ public class ArrayUtil {
         System.out.println();
 
 
-       // Խնդիր 10 — Հաշվել միջին թվաբանականը
+        // Խնդիր 10 — Հաշվել միջին թվաբանականը
+
+        count = numbers.length;
+        double Average = (double) sum / count;
+        System.out.print("Average =  " + Average);
+
+        System.out.println();
 
 
-        sum = 102;
-        double Average = (double) sum / numbers.length;
-        System.out.print("Average = " + Average);
+        System.out.println("======   BONUS   ======");
+
+
+        int max = numbers[0];
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+        System.out.print("max: " + max);
+
+
+        System.out.println();
+
+        int positiveCount = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > 0) {
+                positiveCount++;
+            }
+        }
+        System.out.print("Positive; " + positiveCount);
+
+
+        System.out.println();
+
+
+        int negative = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] < 0) {
+                negative++;
+            }
+        }
+        System.out.print("negative: " + negative);
+
+
+        System.out.println();
+
+        int zero = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == 0) {
+                zero++;
+            }
+        }
+        System.out.print("Zero:" + zero);
+
+        System.out.println();
+
+
+        for (int i = numbers.length - 1; i > 0; i--) {
+            System.out.print(numbers[i] + " ");
+
+        }
 
 
     }
-    // Եթե ամեն ինչ ճիշտ է, ապա կանցնեմ "բոնուսին"։
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
